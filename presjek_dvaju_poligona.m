@@ -39,7 +39,7 @@ tockazaprovjeru=[tx ty];
 drawPoint(tockazaprovjeru)
 hold on
 duljinastranicap=cell();
-%povežemo sve stranice poligona u rubove(mislim da je to kao dužina, PROVJERI)
+
 for i=1:n-1
   stranica{i}=createEdge([c{i,1} c{i,2}], [c{i+1,1} c{i+1,2}]);
   duljinastranicap{i}=sqrt(power((c{i+1,1}-c{i,1}),2)+power((c{i+1,2}-c{i,2}),2));
